@@ -27,3 +27,6 @@ linter:
     options:
       config: 'lint_yml/tslint.json'
 
+kanban:
+  exclude_paths:
+  - app/views/**/*
