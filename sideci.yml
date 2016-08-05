@@ -22,7 +22,7 @@ linter:
   eslint:
     options:
       config: 'lint_yml/.eslintrc'
-      --ext: 'js,jsx,es6'
+      ext: 'js,jsx,es6'
 
   tslint:
     options:
