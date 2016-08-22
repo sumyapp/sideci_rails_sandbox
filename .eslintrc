@@ -22,7 +22,8 @@
     "browser": true
   },
   "plugins": [
-    "react"
+    "react",
+    "jade"
   ],
   "extends": [
     "eslint:recommended",
