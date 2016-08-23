@@ -446,11 +446,3 @@ Lint/DeprecatedClassMethods:
 
 Lint/StringConversionInInterpolation:
   Enabled: false
-
-inherit_from:
-  - https://github.com/actcat/sideci_rails_sandbox/blob/test/rubocop/.rubocop.yml
-  - ../.rubocop.yml
-
-inherit_gem:
-  my-shared-gem: ".rubocop.yml"
-  onkcop: "config/rubocop.yml"
