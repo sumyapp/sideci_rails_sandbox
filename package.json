@@ -1,0 +1,46 @@
+// 20160825173318
+// https://raw.githubusercontent.com/Laurentiu-Andronache/HowToImproveMemory.Guide/2a89d946ddb6275de3823c558c7b5c42435956ea/web-app/package.json
+
+{
+  "name": "web-app",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "lint": "eslint .",
+    "pretest": "npm run lint --silent"
+  },
+  "eslintConfig": {
+    "plugins": [
+      "meteor"
+    ],
+    "extends": [
+      "airbnb",
+      "plugin:meteor/recommended"
+    ],
+    "rules": {
+      "meteor/eventmap-params": [
+        2,
+        {
+          "templateInstanceParamName": "instance"
+        }
+      ],
+      "import/no-unresolved": [
+        2,
+        {
+          "ignore": [
+            "^meteor/"
+          ]
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "meteor-node-stubs": "~0.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.11.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.8.1",
+    "eslint-plugin-meteor": "^3.6.0"
+  }
+}
