@@ -1,0 +1,17 @@
+AllCops:
+  Exclude:
+    - 'vendor/**/*'
+  DisplayCopNames: true
+
+require:
+ - ./lib/balse.rb
+ - rubocop-rspec
+ - some-unpermitted-plugin
+
+inherit_from: .rubocop4.yml
+
+Style/AccessModifierIndentation:
+  Enabled: false
+
+Style/AccessorMethodName:
+  Enabled: false
