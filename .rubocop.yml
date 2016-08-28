@@ -1,0 +1,22 @@
+AllCops:
+  Exclude:
+    - 'vendor/**/*'
+  DisplayCopNames: true
+
+Rails:
+  Enabled: true
+
+require:
+ - ./lib/balse.rb
+ - rubocop-rspec
+ - some-unpermitted-plugin
+
+inherit_from:
+ - https://gist.githubusercontent.com/vexus2/97c3a5af89887c024a24/raw/712610ac7659018c42235e179cd43793f9d1f516/rubocop.yml
+ - .rubocop2.yml
+
+Style/AccessModifierIndentation:
+  Enabled: false
+
+Style/AccessorMethodName:
+  Enabled: false

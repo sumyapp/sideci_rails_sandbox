@@ -1,0 +1,15 @@
+AllCops:
+  Exclude:
+    - 'vendor/**/*'
+  DisplayCopNames: true
+
+Rails:
+  Enabled: true
+
+require:
+ - ./lib/balse.rb
+
+inherit_from:
+ - .rubocop3.yml
+
+
