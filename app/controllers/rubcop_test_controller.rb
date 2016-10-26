@@ -3,6 +3,12 @@ class RubocopController  < ApplicationController
 		print "this is so bad patern"
 	end
 
+	def print_fib2(range)
+		range.each do |n|
+			p fib(n)
+		end
+
+
 	def print_fib(range)
 		range.each do |n|
 			p fib(n)
@@ -14,4 +20,10 @@ class RubocopController  < ApplicationController
 			return 1 if n <= 1
 			fib(n-2) + fib(n-1)
 		end
+
+		def fibw(n)
+			return 1 if n <= 1
+			fib(n-2) + fib(n-1)
+		end
+
 end
