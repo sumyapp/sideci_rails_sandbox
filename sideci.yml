@@ -1,32 +1,8 @@
 linter:
-  rails_best_practices:
-    options:
-      test: true
-      exclude: 'app/'
-  haml_lint:
-    options:
-      config: 'lint_yml/haml-lint.yml'
-
-  jshint:
-    options:
-      config: 'lint_yml/.jshintrc'
-
   rubocop:
-    options:
-      config: 'lint_yml/.rubocop.yml'
+    root_dir: 'sideci_demo'
 
-  coffeelint:
+  phpmd:
+    root_dir: 'sideci_demo'
     options:
-      config: 'lint_yml/coffeelint.json'
-
-  eslint:
-    options:
-      config: 'lint_yml/.eslintrc'
-
-  tslint:
-    options:
-      config: 'lint_yml/tslint.json'
-
-kanban:
-  exclude_paths:
-  - app/views/**/*
+      rule: 'phpmd.xml'
